@@ -6,7 +6,6 @@
 
 /*
 *	Lucas Melo e Mayko Oliveira
-*	1305093 e 1104675
 */
 
 
@@ -33,7 +32,7 @@ void prim(Heap *h){
 			//Cálculo da distância euclidiana
 			distEuclid = sqrt(pow(u.x - h->V[j].x, 2) + pow(u.y - h->V[j].y, 2));
 			//Atualização da distância do vértice j, colocando u como pai do Vértice j
-			if(distEuclid < h->V[j].d && distEuclid != 0 /*&& nao está mais no heap*/){
+			if(distEuclid < h->V[j].d && distEuclid != 0){
 				h->V[j].d = distEuclid;
 				h->V[j].xPai = u.x;
 				h->V[j].yPai = u.y;
